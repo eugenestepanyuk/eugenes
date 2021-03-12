@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import styles from '../styles/Home.module.css'
 
-export default function Main() {
+export default function Loader() {
     const [activeFirst, setActiveFirst] = useState(null)
     const [activeSecond, setActiveSecond] = useState(null)
     const stylesFirst = [styles.gradient, styles.first, activeFirst]

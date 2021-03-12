@@ -14,10 +14,10 @@
   font-size: 1.5rem;
   font-weight: 300;
   letter-spacing: .7em;
-  animation: cssAnimation 6s forwards;
+  animation: loaderAnimation 6s forwards;
 }
 
-@keyframes cssAnimation {
+@keyframes loaderAnimation {
   0%   {opacity: 1;}
   20%  {opacity: 1;}
   40%  {opacity: 0.7;}
@@ -49,7 +49,6 @@
   transform: rotateX(180deg);
   transition: transform .4s linear;
   backface-visibility: hidden;
-  /* animation: cssFirst 2s both; */
 }
 
 .gradient.first.active {
@@ -60,25 +59,19 @@
   transform: rotateX(180deg);
   transition: transform .4s linear;
   backface-visibility: hidden;
-  /* animation: cssSecond 4s both; */
 }
 
 .gradient.second.active {
   transform: rotateX(0deg);
 }
 
-@keyframes cssFirst {
-  to {
-    transform: rotateX(180deg);
-    transition: transform .4s linear;
-    backface-visibility: hidden;
-  }
+.main {
+  animation: mainAnimation 7s forwards;
 }
 
-/* @keyframes cssSecond {
-  to {
-    transform: rotateX(180deg);
-    transition: transform 4s linear;
-    backface-visibility: hidden;
-  }
-} */
+@keyframes mainAnimation {
+  0%   {opacity: 0;}
+  80%  {opacity: 0;}
+  100% {opacity: 1;}
+}
+
