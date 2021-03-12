@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Main from '../containers/main'
+import Loader from '../containers/loader'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -11,7 +11,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <Main />
+        <Loader />
       </main>
     </div>
   )

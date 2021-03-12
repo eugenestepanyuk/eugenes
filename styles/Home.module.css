@@ -1,26 +1,20 @@
 .container {
   min-height: 100vh;
-  padding: 0 0.5rem;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
   background: #000;
   color: #fff;
   opacity: 0.9;
 }
 
-.main {
-  padding: 5rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.loader {
+  width: 100%;
+  height: 50px;
   text-align: center;
   font-size: 1.5rem;
-  letter-spacing: 7px;
-  animation: cssAnimation 5s forwards;
+  font-weight: 300;
+  letter-spacing: .7em;
+  animation: cssAnimation 6s forwards;
 }
 
 @keyframes cssAnimation {
@@ -50,34 +44,41 @@
   100% { background-position: right; }
 }
 
-.active {
-  transform: rotateX(0deg);
-}
 
 .gradient.first {
   transform: rotateX(180deg);
   transition: transform .4s linear;
   backface-visibility: hidden;
+  /* animation: cssFirst 2s both; */
+}
+
+.gradient.first.active {
+  transform: rotateX(0deg);
 }
 
 .gradient.second {
   transform: rotateX(180deg);
   transition: transform .4s linear;
   backface-visibility: hidden;
+  /* animation: cssSecond 4s both; */
 }
 
-/* @keyframes cssFirst {
-  to {
-    transform: rotateX(180deg);
-  transition: transform .4s linear;
-  backface-visibility: hidden;
-  }
+.gradient.second.active {
+  transform: rotateX(0deg);
 }
 
-@keyframes cssSecond {
+@keyframes cssFirst {
   to {
     transform: rotateX(180deg);
     transition: transform .4s linear;
+    backface-visibility: hidden;
+  }
+}
+
+/* @keyframes cssSecond {
+  to {
+    transform: rotateX(180deg);
+    transition: transform 4s linear;
     backface-visibility: hidden;
   }
 } */
