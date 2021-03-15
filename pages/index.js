@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Loader from '../containers/loader'
-import Main from '../containers/main'
-import styles from '../styles/Home.module.css'
+import Menu from '../containers/menu'
+import styles from '../styles/App.module.css'
 
 export default function Home() {
   return (
@@ -13,7 +13,7 @@ export default function Home() {
 
       <main>
         <Loader />
-        <Main />
+        <Menu />
       </main>
     </div>
   )
