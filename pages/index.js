@@ -9,12 +9,14 @@ export default function Home() {
       <Head>
         <title>Eugene Stepanyuk | Web Developer</title>
         <link rel="icon" href="/favicon.ico" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" />
       </Head>
 
-      <main>
-        <Loader />
-        <Menu />
-      </main>
+        <main>
+          <Loader />
+          <Menu />
+        </main>
     </div>
   )
 }
